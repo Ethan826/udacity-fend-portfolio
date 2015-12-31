@@ -1,0 +1,9 @@
+h1,h2,h3,h4,h5,h6,p {
+    color: #747704;
+}
+.fakehr {
+    padding-bottom: 10px;
+    overflow: hidden;
+    height: 10px;
+    background: #bcbbbb;
+}
