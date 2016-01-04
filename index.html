@@ -5,47 +5,89 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <title>Jane Doette</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/foundation.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="row">
-        <div class="small-6 columns">
-            <img alt="Udacity logo" src="images/udacity.jpg">
-        </div>
-        <div class="small-6 columns text-right">
-            <h1>Jane Doette</h1>
-            <h4>Front-End Ninja</h4>
-        </div>
-    </div>
-    <!--     <div class="row fakehr">
-         <div class="small-12"></div>
-         </div> -->
-    <div class="row">
-        <div class="small-12 columns">
-            <img src="http://placehold.it/1600x600" alt="Full width">
-        </div>
-    </div>
-    <div class="row">
-        <h2>Featured Work</h2>
-    </div>
-    <div class="row">
-        <div class="small-4 column">
-            <img alt="Small picture" src="http://placehold.it/600x400">
-            <h3 class="text-center" ">Appify</h3>
-            <p class="text-center "><a href="#">https://github.com/udacity/Appify</a></p>
-        </div>
-        <div class="small-4 column ">
-            <img alt="Small picture " src="http://placehold.it/600x400 ">
-            <h3 class="text-center">Sunflower</h3>
-            <p class="text-center"><a href="#">https://github.com/udacity/Sunflower</a></p>
-        </div>
-        <div class="small-4 column">
-            <img alt="Small picture" src="http://placehold.it/600x400">
-            <h3 class="text-center">Bokeh</h3>
-            <p class="text-center"><a href="#">https://github.com/udacity/Bokeh</a></p>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas></div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <ul class="vertical-menu">
+                    <li>Foo</li>
+                    <li>Bar</li>
+                </ul>
+            </div>
+            <header>
+                <div class="row">
+                    <div class="small-3 columns">
+                        <img alt="Udacity logo" src="images/udacity.jpg">
+                    </div>
+                    <div class="small-9 columns text-right">
+                        <h1>Jane Doette</h1>
+                        <h4>Front-End Ninja</h4>
+                        <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <picture class="big-pic">
+                            <source scrset="images/typewriter.webp 960w, images/little_typewriter.webp 480w">
+                            <source scrset="images/typewriter.jpg 960w, images/little_typewriter.jpg 480w">
+                            <img src="images/typewriter.jpg" alt="Typewriter">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contents">
+
+                <div class="row">
+                    <h2>Featured Work</h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="small-12 medium-4 column">
+                        <picture>
+                            <source scrset="images/dog.webp 800w, images/little_dog.webp 400w">
+                            <source scrset="images/dog.jpg 800w, images/little_dog.jpg 400w">
+                            <img alt="Picture of a highfalutin' dog" src="images/dog.jpg">
+                        </picture>
+                        <h3 class="text-center">Imperious Dog</h3>
+                        <p class="text-center tight-top"><a href="https://github.com/udacity/ImperiousDog/" class="link">https://github.com/udacity/ImperiousDog/</a></p>
+                    </div>
+
+                    <div class="small-12 medium-4 column">
+                        <picture>
+                            <source scrset="images/bus.webp 800w, images/little_bus.webp 400w">
+                            <source scrset="images/bus.jpg 800w, images/little_bus.jpg 400w">
+                            <img alt="Picture of a bus" src="images/bus.jpg">
+                        </picture>
+                        <h3 class="text-center">Uber Bus</h3>
+                        <p class="text-center tight-top"><a href="https://github.com/udacity/UberBus/" class="link">https://github.com/udacity/UberBus/</a></p>
+                    </div>
+
+                    <div class="small-12 medium-4 column">
+                        <picture>
+                            <source scrset="images/booze.webp 800w, images/little_booze.webp 400w">
+                            <source scrset="images/booze.jpg 800w, images/little_booze.jpg 400w">
+                            <img class="gallery-pic" alt="Beer bottles" src="images/booze.jpg">
+                        </picture>
+                        <h3 class="text-center">Beer Simulator</h3>
+                        <p class="text-center tight-top hide-small"><a href="https://github.com/udacity/BeerSimulator/" class="link">https://github.com/udacity/Bokeh/</a></p>
+                    </div>
+
+                </div>
+            </section>
         </div>
     </div>
 </body>
